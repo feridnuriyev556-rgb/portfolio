@@ -1,0 +1,143 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", Arial, sans-serif;
+}
+
+body {
+    background: #f0f2f5;
+    color: #222;
+    line-height: 1.7;
+}
+
+/* Navigation */
+header {
+    background: #0d0d0d;
+    padding: 18px 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding-bottom: 3px;
+    border-bottom: 2px solid transparent;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #00aaff;
+    border-bottom: 2px solid #00aaff;
+}
+
+/* Container */
+.container {
+    max-width: 900px;
+    margin: 60px auto;
+    background: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+/* Headings */
+h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 26px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    border-left: 4px solid #00aaff;
+    padding-left: 10px;
+}
+
+/* Paragraph */
+p {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+ul {
+    padding-left: 25px;
+}
+
+ul li {
+    font-size: 17px;
+    margin-bottom: 8px;
+}
+
+/* Blog Cards */
+.blog {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin: 15px 0;
+    border-left: 4px solid #00aaff;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.blog:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 35px rgba(0,0,0,0.12);
+}
+
+/* Project Cards */
+.project {
+    background: white;
+    padding: 25px;
+    margin: 15px 0;
+    border-radius: 12px;
+    border-left: 4px solid #00aaff;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 35px rgba(0,0,0,0.12);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    nav {
+        gap: 15px;
+    }
+
+    .container {
+        margin: 30px auto;
+        padding: 25px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+}
